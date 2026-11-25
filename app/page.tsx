@@ -1,18 +1,22 @@
-// app/page.tsx
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Hello, my name is Mark Loui</h1>
+    <main className="p-8">
+      <h1 className="text-4xl font-bold">
+        Hello, my name is Loui!
+      </h1>
 
-      <p>
-        I am a student learning Next.js and web development. I enjoy coding and
-        creating different projects.
+      <p className="mt-4">
+        I am a student interested in programming and web development.
+        I enjoy learning new technologies and creating websites.
       </p>
 
-      <Link href="/projects" className="mt-4 inline-block underline">
-        See my projects
+      <Link
+        href="/projects"
+        className="text-blue-600 underline mt-4 inline-block"
+      >
+        See My Projects
       </Link>
     </main>
   );
